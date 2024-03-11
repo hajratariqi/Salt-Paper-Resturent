@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Snp Main Lahore | Homepage</title>
+    <link
+      rel="icon"
+      href="data:image/png;base64,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"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar Contaier -->
+      <div class="navbar">
+        <img
+          src="https://images-beta.tossdown.com/site/65b73fb7-2706-4440-87b9-9555fcd0ba80.webp"
+          class="web-logo"
+        />
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Publication</li>
+          <li>Feedback</li>
+        </ul>
+        <button class="navbarBtn">Get a Franchise</button>
+        <button
+          class="navbarBtn"
+          style="background-color: #ed1c24; border: none"
+        >
+          Order Now
+          <span class="circleBox"
+            ><i class="fa-solid fa-arrow-right arrowIcon"></i>
+          </span>
+        </button>
+      </div>
+
+      <!-- Slider Container -->
+      <div class="slider">
+        <img
+          src="https://static.tossdown.com/images/380f71bd-e472-40b9-b3e9-778f959284a2.webp"
+        />
+      </div>
+
+      <!-- Full Main Container -->
+      <div class="aboutRestarurant">
+        <!-- Welcome screen -->
+        <div class="WelcomeSaction">
+          <p class="welcomeTxt">
+            Welcome to <span>Salt'n Pepper</span> Restaurants! Our Brands
+          </p>
+          <p class="orderPara">
+            Please click our brands below for further information, reservation
+            or to order online!
+          </p>
+          <!-- Crart Section -->
+          <div class="rowCarts">
+            <div class="cartContainer">
+              <div class="cartBackground">
+                <img
+                  src="https://static.tossdown.com/site/8a66dd76-03d2-4b71-8d03-cf045f0248a7.webp"
+                  class="CartSaltImg"
+                />
+              </div>
+              <button class="OrderBtn">Order Now</button>
+            </div>
+            <div class="cartContainer">
+              <div class="cartBackground">
+                <img
+                  src="https://static.tossdown.com/site/9d9cb355-ac8c-404e-a608-c28242343cd1.webp"
+                  class="CartSaltImg"
+                />
+              </div>
+              <button class="OrderBtn">Order Now</button>
+            </div>
+            <div class="cartContainer">
+              <div class="cartBackground">
+                <img
+                  src="https://static.tossdown.com/site/f9238d0e-7c34-4139-a081-c57b7713628e.webp"
+                  class="CartSaltImg"
+                />
+              </div>
+              <button class="OrderBtn">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Secount  Franchise Section  -->
+        <div class="franchiseSection">
+          <p class="franchiseText">
+            <span>Salt'n Pepper</span> <br />Restaurant Franchises
+          </p>
+          <p class="franchiseOrderPara">
+            Please click our brands below for further information,
+            reservationsor to order online!
+          </p>
+          <img
+            src="https://images-beta.tossdown.com/site/bb1bd702-431a-4f3a-a0ca-c5966a1f7985.webp"
+          />
+          <div class="franchiseRowCart">
+            <!-- Fracshise cart section -->
+            <div>
+              <p class="cityName">ISLAMABAD</p>
+              <p class="restarurentName">
+                <span>Salt'n Pepper</span> Restaurant
+              </p>
+              <p class="afranchiseAddres">
+                <i class="fa-solid fa-location-dot"></i> Plot# 55, ShabbirPlaza,
+                Blue Area, F-6, Islamabad
+              </p>
+              <p class="franchiseAddres">
+                <i class="fa-solid fa-phone"></i>Ph: 051-260490-6
+              </p>
+              <div class="frachiseBtns">
+                <button class="OrderBtn franchiseBtn">
+                  Get Direction<span class="circleBox"
+                    ><i class="fa-solid fa-arrow-right arrowIcon"></i
+                  ></span>
+                </button>
+              </div>
+            </div>
+            <div class="franchiseCartImages">
+              <img
+                src="https://images-beta.tossdown.com/site/7aba8915-02ed-46ee-bd96-1063abe072fa.webp"
+              />
+            </div>
+          </div>
+
+          <div class="franchiseSecRowCart">
+            <div class="franchiseCartImages">
+              <img
+                src="https://images-beta.tossdown.com/site/11771dbf-36a1-4684-a55e-18af61e0f77c.webp"
+              />
+            </div>
+            <div>
+              <p class="cityName">FAISALABAD</p>
+              <p class="restarurentName">
+                <span>Salt'n Pepper</span> Restaurant
+              </p>
+              <p class="afranchiseAddres">
+                <i class="fa-solid fa-location-dot"></i> Plot# 55, ShabbirPlaza,
+                Blue Area, F-6, Islamabad
+              </p>
+              <p class="franchiseAddres">
+                <i class="fa-solid fa-phone"></i>Ph: 051-260490-6
+              </p>
+              <div class="frachiseBtns">
+                <button class="OrderBtn franchiseBtn">
+                  Get Direction
+                  <span class="circleBox">
+                    <i class="fa-solid fa-arrow-right arrowIcon"></i
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="franchiseSecRowCart">
+            <div>
+              <p class="cityName">BAHAWALPUR</p>
+              <p class="restarurentName">
+                <span>Salt'n Pepper</span> Restaurant
+              </p>
+              <p class="afranchiseAddres">
+                <i class="fa-solid fa-location-dot"></i> Plot# 55, Shabbir
+                Plaza, Blue Area, F-6, Islamabad
+              </p>
+              <p class="franchiseAddres">
+                <i class="fa-solid fa-phone"></i>Ph: 051-260490-6
+              </p>
+              <div class="frachiseBtns">
+                <button class="OrderBtn franchiseBtn">
+                  Get Direction
+                  <span class="circleBox">
+                    <i class="fa-solid fa-arrow-right arrowIcon"></i
+                  ></span>
+                </button>
+              </div>
+            </div>
+            <div class="franchiseCartImages">
+              <img
+                src="https://images-beta.tossdown.com/site/b2f78afe-11e4-4af5-8aef-cff9c2908614.webp"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- third Expree  Section-->
+        <div class="expressSection">
+          <p class="franchiseText">
+            <span>Salt'n Pepper</span> <br />
+            Restaurant Franchises
+          </p>
+          <!-- Express Cart SEction -->
+          <div class="expressCartSection">
+            <div class="expressCart">
+              <img
+                src="https://images-beta.tossdown.com/site/baaaf1e6-1c6a-464b-9ba6-58577855f10d.webp"
+              />
+              <p class="mals">PACKAGES MALL</p>
+              <p class="expresRestarurant">
+                <span>Salt'n Pepper</span> Restaurant
+              </p>
+              <p class="expressAdress">
+                <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                Mall
+              </p>
+              <p class="expressNumber">
+                <i class="fa-solid fa-phone"></i>Ph: 051-260490-6
+              </p>
+              <button class="OrderBtn franchiseBtn">
+                Get Direction
+                <span class="circleBox">
+                  <i class="fa fa-solid fa-arrow-right rotateArrow"></i
+                ></span>
+              </button>
+            </div>
+            <div class="expressCart">
+              <img
+                src="https://images-beta.tossdown.com/site/5653706f-83e4-42bb-99f9-4a64e9a1101a.webp"
+              />
+              <p class="mals">EMPORIUM MALL</p>
+              <p class="expresRestarurant">
+                <span>Salt'n Pepper</span> Restaurant
+              </p>
+              <p class="expressAdress">
+                <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                Mall
+              </p>
+              <p class="expressNumber">
+                <i class="fa-solid fa-phone"></i>Ph: 051-260490-6
+              </p>
+              <button class="OrderBtn franchiseBtn">
+                Get Direction
+                <span class="circleBox">
+                  <i class="fa fa-solid fa-arrow-right rotateArrow"></i
+                ></span>
+              </button>
+            </div>
+            <div class="expressCart">
+              <img
+                src="https://static.tossdown.com/images/9f2b5abf-88a1-4f49-9f98-c3dfee664e40.webp"
+              />
+              <p class="mals">GUJRANWALA</p>
+              <p class="expresRestarurant">
+                <span>Salt'n Pepper</span> Restaurant
+              </p>
+              <p class="expressAdress">
+                <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                Mall
+              </p>
+              <p class="expressNumber">
+                <i class="fa-solid fa-phone"></i>Ph: 051-260490-6
+              </p>
+              <button class="OrderBtn franchiseBtn">
+                Get Direction
+                <span class="circleBox">
+                  <i class="fa fa-solid fa-arrow-right rotateArrow"></i
+                ></span>
+              </button>
+            </div>
+            <div class="expressCart">
+              <img
+                src="https://static.tossdown.com/images/0f3ddba0-18a0-450e-af77-188aeb795934.webp"
+              />
+              <p class="mals">SARGODHA</p>
+              <p class="expresRestarurant">
+                <span>Salt'n Pepper</span> Restaurant
+              </p>
+              <p class="expressAdress">
+                <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                Mall
+              </p>
+              <p class="expressNumber">
+                <i class="fa-solid fa-phone"></i>Ph: 051-260490-6
+              </p>
+              <button class="OrderBtn franchiseBtn">
+                Get Direction
+                <span class="circleBox">
+                  <i class="fa fa-solid fa-arrow-right rotateArrow"></i
+                ></span>
+              </button>
+            </div>
+            <div class="expressCart">
+              <img
+                src="https://static.tossdown.com/images/171bb884-f60a-4d94-a0b9-78204522564e.webp"
+              />
+              <p class="mals">JHELUM</p>
+              <p class="expresRestarurant">
+                <span>Salt'n Pepper</span> Restaurant
+              </p>
+              <p class="expressAdress">
+                <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                Mall
+              </p>
+              <p class="expressNumber">
+                <i class="fa-solid fa-phone"></i>Ph: 051-260490-6
+              </p>
+              <button class="OrderBtn franchiseBtn">
+                Get Direction
+                <span class="circleBox">
+                  <i class="fa fa-solid fa-arrow-right rotateArrow"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="expressCart">
+              <img
+                src="https://static.tossdown.com/images/31b37f0c-5936-4232-a55e-8042c2656526.webp"
+              />
+              <p class="mals">FAISAL TOWN</p>
+              <p class="expresRestarurant">
+                <span>Salt'n Pepper</span> Restaurant
+              </p>
+              <p class="expressAdress">
+                <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                Mall
+              </p>
+              <p class="expressNumber">
+                <i class="fa-solid fa-phone"></i>Ph: 051-260490-6
+              </p>
+              <button class="OrderBtn franchiseBtn">
+                Get Direction
+                <span class="circleBox">
+                  <i class="fa fa-solid fa-arrow-right rotateArrow"></i
+                ></span>
+              </button>
+            </div>
+
+            <div class="expressCart">
+              <img
+                src="https://static.tossdown.com/images/bbac9f4a-2970-4bc4-b8a1-541857d96e79.webp"
+              />
+              <p class="mals">GUJRAT</p>
+              <p class="expresRestarurant">
+                <span>Salt'n Pepper</span> Restaurant
+              </p>
+              <p class="expressAdress">
+                <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                Mall
+              </p>
+              <p class="expressNumber">
+                <i class="fa-solid fa-phone"></i>Ph: 051-260490-6
+              </p>
+              <button class="OrderBtn franchiseBtn">
+                Get Direction
+                <span class="circleBox">
+                  <i class="fa fa-solid fa-arrow-right rotateArrow"></i
+                ></span>
+              </button>
+            </div>
+            <div class="expressCart">
+              <img
+                src="https://static.tossdown.com/site/6b8657b7-91ec-4e06-a06c-5cad0d70606d.webp"
+              />
+              <p class="mals">LAHORE</p>
+              <p class="expresRestarurant">
+                <span>Salt'n Pepper</span> Restaurant
+              </p>
+              <p class="expressAdress">
+                <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                Mall
+              </p>
+              <p class="expressNumber">
+                <i class="fa-solid fa-phone"></i>Ph: 051-260490-6
+              </p>
+              <button class="OrderBtn franchiseBtn">
+                Get Direction
+                <span class="circleBox">
+                  <i class="fa fa-solid fa-arrow-right rotateArrow"></i
+                ></span>
+              </button>
+            </div>
+            <div class="expressCart">
+              <img
+                src="https://static.tossdown.com/site/6b8657b7-91ec-4e06-a06c-5cad0d70606d.webp"
+              />
+              <p class="mals">LAHORE</p>
+              <p class="expresRestarurant">
+                <span>Salt'n Pepper</span> Restaurant
+              </p>
+              <p class="expressAdress">
+                <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                Mall
+              </p>
+              <p class="expressNumber">
+                <i class="fa-solid fa-phone"></i>Ph: 051-260490-6
+              </p>
+              <button class="OrderBtn franchiseBtn">
+                Get Direction
+                <span class="circleBox">
+                  <i class="fa fa-solid fa-arrow-right rotateArrow"></i
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- village franshise section -->
+        <div class="vellageFranshiseSection">
+
+          <p class="franchiseText"><span>Salt'n Pepper</span><br />Village Franchise</p>
+
+          <div class="villageSectionCard">
+            <div class="franchiseCartImages villageResImg">
+              <img
+                src="https://images-beta.tossdown.com/site/11771dbf-36a1-4684-a55e-18af61e0f77c.webp"
+              />
+            </div>
+            <div>
+              <p class="cityName">FAISALABAD</p>
+              <p class="restarurentName">
+                <span>Salt'n Pepper</span> Restaurant
+              </p>
+              <p class="afranchiseAddres">
+                <i class="fa-solid fa-location-dot"></i> Plot# 55, ShabbirPlaza,
+                Blue Area, F-6, Islamabad
+              </p>
+              <p class="franchiseAddres">
+                <i class="fa-solid fa-phone"></i>Ph: 051-260490-6
+              </p>
+              <div class="frachiseBtns">
+                <button class="OrderBtn franchiseBtn villageDirectionBtn">
+                  Get Direction
+                  <span class="circleBox">
+                    <i class="fa-solid fa-arrow-right arrowIcon"></i
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Openinig soon resturent -->
+          <div class="OpeninigSoonRestrurents">
+            <p class="franchiseText"><span>Salt'n Pepper</span><br />Express Franchises <span class="sideHeading">(Openinig Now)</span></p>
+
+            <div class="openingLocation">
+              <!-- card -->
+              <section class="loationSectiona">
+                <span class="bgIcon"><i class="fa-solid fa-location-dot lacation"></i></span>
+                <p class="cityName OpeninigSoon">opening Soon</p>
+                <p class="locationText">Salt'n Pepper <span>Express Al-Jalil Garden <br> Sadhoke</span></p>
+              </section>
+               <!-- card -->
+               <section class="loationSectiona">
+                <span class="bgIcon"><i class="fa-solid fa-location-dot lacation"></i></span>
+                <p class="cityName OpeninigSoon">opening Soon</p>
+                <p class="locationText">Salt'n Pepper <span>Express Al-Jalil Garden <br> Sadhoke</span></p>
+              </section>
+               <!-- card -->
+               <section class="loationSectiona">
+                <span class="bgIcon"><i class="fa-solid fa-location-dot lacation"></i></span>
+                <p class="cityName OpeninigSoon">opening Soon</p>
+                <p class="locationText">Salt'n Pepper <span> Express Blue World City <br>Sheikhupura</span></p>
+              </section>
+               <!-- card -->
+               <section class="loationSectiona">
+                <span class="bgIcon"><i class="fa-solid fa-location-dot lacation"></i></span>
+                <p class="cityName OpeninigSoon">opening Soon</p>
+                <p class="locationText">Salt'n Pepper <span>Express<br> Sahiwal</span></p>
+              </section>
+               <!-- card -->
+               <section class="loationSectiona">
+                <span class="bgIcon"><i class="fa-solid fa-location-dot lacation"></i></span>
+                <p class="cityName OpeninigSoon">opening Soon</p>
+                <p class="locationText">Salt'n Pepper <span>City Housing<br> Gujranwala</span></p>
+              </section>
+               <!-- card -->
+               <section class="loationSectiona">
+                <span class="bgIcon"><i class="fa-solid fa-location-dot lacation"></i></span>
+                <p class="cityName OpeninigSoon">opening Soon</p>
+                <p class="locationText">Salt'n Pepper <span>City Housing<br>Sheikhupura</span></p>
+              </section>
+               <!-- card -->
+               <section class="loationSectiona">
+                <span class="bgIcon"><i class="fa-solid fa-location-dot lacation"></i></span>
+                <p class="cityName OpeninigSoon">opening Soon</p>
+                <p class="locationText">Salt'n Pepper <span>Express Al-Jalil Garden <br> Sialkot</span></p>
+              </section>
+               <!-- card -->
+               <section class="loationSectiona">
+                <span class="bgIcon"><i class="fa-solid fa-location-dot lacation"></i></span>
+                <p class="cityName OpeninigSoon">opening Soon</p>
+                <p class="locationText">Salt'n Pepper <span> <br>Burewala</span></p>
+              </section>
+            </div>
+
+            <!-- Last section special feed -->
+            <h1>Social Feed</h1>
+            <div class="spacialFeedContainer">
+              <img src="https://static.tossdown.com/images/0e1296ae-9bcd-493a-a13f-81bd0a376fbb.webp" alt="food">
+              <img src="https://static.tossdown.com/images/90ae7dd1-d505-40d1-a8ea-bce0ae9353f0.webp" alt="food">
+              <img src="https://static.tossdown.com/images/2741f491-d49f-4ec1-9de3-4df086748b54.webp" alt="food">
+              <img src="https://static.tossdown.com/images/b75b70d0-122d-4754-99a5-2ff3e0905144.webp" alt="food">
+              <img src="https://static.tossdown.com/images/ad91d5cd-9c6d-4233-8f33-55b18886c858.webp" alt="food">
+            </div>
+          </div>
+          <!-- Footer section -->
+          <footer class="footer">
+            <div class="foooterRow">
+
+            <img src="https://images-beta.tossdown.com/site/a4195117-d4ae-45d4-9088-21162bacdfb1.webp">
+
+            <div class="footerColum">
+
+            <div class="footerDetailBoxOne">
+              <img class="web-logo" src="https://static.tossdown.com/images/da52b9b3-ba03-4d41-bc8f-ac9e7d6a598b.webp">
+              <p>The Salt’n Pepper Restaurants are an example of gracious dinning, outstanding service, extraordinary classic and contemporary cuisine. 
+                The restaurants have become the ultimate dinning destinations in Lahore.
+                 From family occasions to business dinner and moments of the heart, this place is where unforgettable memories are made.</p>
+                </div>
+                 <ul>
+                   <li>Terms & contidition</li>
+                   <li>Privacy policy</li>
+                  </ul>
+                </div>
+
+                 <ul class="footer_detail_box_content_list">
+                  <li>Site Links</li>
+                  <li>Home</li>
+                  <li>About Us</li>
+                  <li>Publications</li>
+                  <li>Get a Franchise</li>
+                  <li>Feedback</li>
+                 </ul>
+
+                 <ul class="footer_detail_box_content_list">
+                  <li>Contact Us</li>
+                  <li>+92 42 358 509 31 (Head Office)</li>
+                  <li>+92 42 358 509 30 (Head Office)</li>
+                  <li>+92 42 111 100 678 (Delivery)</li>
+                  <li>+92 03 111 444 610 (Delivery)</li>
+                  <li>snpfood@brain.net.pk</li>
+                  <li>23-Usman Block, New <br> GardenTown, Lahore, Pakistan</li>
+                 </ul>
+
+                <div class="footerConnectLinks">
+                  <h2>Follow Us</h2>
+                  <div class="FooterSocialLinks">
+                    <span class="bgIcon footerIcon"><i class="fa-brands fa-facebook-f"></i></span>
+                    <span class="bgIcon footerIcon"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="bgIcon footerIcon"><i class="fa-brands fa-twitter"></i></span>
+                    </div>
+                    <div class="downloadBtn">
+                    <img src="https://static.tossdown.com/images/15a204d9-9623-4aea-8c7a-a4419417ee7e.webp">
+
+                    <img src="https://static.tossdown.com/images/c5c0daad-373c-4dd5-a8e8-6dcbbd142963.webp">
+                  </div>
+                </div>
+              </div>
+                <hr style="border: 1px solid rgb(95, 95, 95);">
+                <div class="copyRightSection">
+                  <p>© 2023 Salt'n Pepper Restaurant. </p>
+                  <p>Powered Bytossdown.com</p>
+
+                </div>
+          </footer>
+
+      </div><!-- main  about section end -->
+    </div><!-- container end -->
+  </body>
+</html>
